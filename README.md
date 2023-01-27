@@ -1,1 +1,1 @@
-# classic-provably-fair
+# classic provably fair
