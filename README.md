@@ -6,7 +6,7 @@ example generate pf data
     clientSedd = "ABCD"
     nonce = 0
     secretSald = randomString(12)
-    data = provablyFair(serverSeed, clientSedd, nonce, secretSald)
+    data = provablyFair(serverSeed, clientSeed, nonce, secretSald)
     print(data.get_roll())
     print(data.publicHash())
     print("--------------------------------")
@@ -21,7 +21,7 @@ example checker
     nonce = 2
     roll = 81080
 
-    data = provablyFair(serverSeed, clientSedd, nonce, secretSald)
+    data = provablyFair(serverSeed, clientSeed, nonce, secretSald)
 
     print(bcolors.OKCYAN + "Your publicHash: ", publicHash)
     print(bcolors.OKCYAN + "Your roll: ", roll)
