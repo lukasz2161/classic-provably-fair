@@ -1,7 +1,7 @@
 The classic provably fair system used on gaming sites
 
-<code>
-  #example generate pf data
+example generate pf data
+
     serverSeed = randomString(16)
     clientSedd = "ABCD"
     nonce = 0
@@ -11,7 +11,9 @@ The classic provably fair system used on gaming sites
     print(data.publicHash())
     print("--------------------------------")
 
-    #example checker
+
+example checker
+
     serverSeed = "fLKT8YGsZaMgc6Iz"
     secretSald = "mgV7y7knLq3Wmx3z"
     clientSedd = "dPatyUJVyQ5obfzg"
@@ -32,4 +34,4 @@ The classic provably fair system used on gaming sites
         print(bcolors.OKGREEN + "The data is identical, everything is fine")
     else:
         print(bcolors.FAIL + "Roll is invalid")
-  </code>
+![Zrzut ekranu 2023-01-29 o 18 06 32](https://user-images.githubusercontent.com/65758825/215343251-7c942767-acd3-4625-90d1-599cf26d52a2.png)
