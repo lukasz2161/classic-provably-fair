@@ -42,22 +42,22 @@ if __name__ == "__main__":
 
     #example generate pf data
     serverSeed = randomString(16)
-    clientSedd = "ABCD"
+    clientSeed = "ABCD"
     nonce = 0
     secretSald = randomString(12)
-    data = provablyFair(serverSeed, clientSedd, nonce, secretSald)
+    data = provablyFair(serverSeed, clientSeed, nonce, secretSald)
     print(bcolors.OKBLUE + "Your publicHash: ", data.publicHash())
     print("--------------------------------")
 
     #example checker
     serverSeed = "fLKT8YGsZaMgc6Iz"
     secretSald = "mgV7y7knLq3Wmx3z"
-    clientSedd = "dPatyUJVyQ5obfzg"
+    clientSeed = "dPatyUJVyQ5obfzg"
     publicHash = "f85ff47ac66c7c039bbe24748ac13a206159fc24418c7a994de50682132a27e3"
     nonce = 2
     roll = 81080
 
-    data = provablyFair(serverSeed, clientSedd, nonce, secretSald)
+    data = provablyFair(serverSeed, clientSeed, nonce, secretSald)
 
     print(bcolors.OKCYAN + "Your publicHash: ", publicHash)
     print(bcolors.OKCYAN + "Your roll: ", roll)
