@@ -35,7 +35,7 @@ class provablyFair:
         return int(dec) + 1
 
     def publicHash(self):
-        return hmac.new(self.secretSald.encode(), self.serverSeed.encode(), "sha256").hexdigest()
+        return hmac.new(self.secretSald.encode(), self.serverSeed.encode(), hashlib.sha256).hexdigest()
 
 
 if __name__ == "__main__":
@@ -56,6 +56,7 @@ if __name__ == "__main__":
     publicHash = "f85ff47ac66c7c039bbe24748ac13a206159fc24418c7a994de50682132a27e3"
     nonce = 2
     roll = 81080
+
 
     data = provablyFair(serverSeed, clientSeed, nonce, secretSald)
 
