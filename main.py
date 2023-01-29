@@ -46,8 +46,7 @@ if __name__ == "__main__":
     nonce = 0
     secretSald = randomString(12)
     data = provablyFair(serverSeed, clientSedd, nonce, secretSald)
-    print(data.get_roll())
-    print(data.publicHash())
+    print(bcolors.OKBLUE + "Your publicHash: ", data.publicHash())
     print("--------------------------------")
 
     #example checker
